@@ -1,0 +1,8 @@
+:root { --gym:#172b3a; --lime:#d7f36b; }
+.hero { background:linear-gradient(135deg,#172b3a,#31566b); padding:90px 16px; }
+.best-value { border:3px solid #d7a928; }
+.table-wrap { width:100%; overflow-x:hidden; }
+table { width:100%; table-layout:fixed; border-collapse:collapse; font-size:14px; }
+th,td { border:1px solid #9ba9b5; padding:9px 5px; overflow-wrap:anywhere; }
+th { background:#31566b; color:white; }
+@media (max-width:400px) { table { font-size:12px; } th,td { padding:6px 3px; } }

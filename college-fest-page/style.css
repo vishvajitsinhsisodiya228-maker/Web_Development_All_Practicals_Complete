@@ -1,0 +1,41 @@
+:root { --navy:#173b70; --gold:#f7c948; --coral:#e76f51; --mint:#8abf9f; --cream:#fff7e6; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: Arial, Helvetica, sans-serif; color:#243247; background:var(--cream); }
+.site-header { background:var(--navy); color:white; padding:18px 5%; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+h1,h2 { font-family: Georgia, 'Times New Roman', serif; }
+.site-header h1 { margin:0; font-size:32px; }
+nav { display:flex; gap:16px; flex-wrap:wrap; }
+nav a { color:white; text-decoration:none; }
+main { min-height:1500px; max-width:1100px; margin:auto; padding:24px; }
+article { background:white; margin:18px 0; padding:20px; border-radius:12px; }
+h2 { color:var(--navy); }
+p { line-height:1.6; }
+.highlight { background:#fff0bd; padding:10px; }
+#contact { border-left:5px solid var(--coral); }
+.passes { display:flex; flex-direction:row; justify-content:space-between; gap:16px; }
+.pass { width:220px; box-sizing:border-box; padding:16px; border:2px solid var(--navy); margin:12px; position:relative; display:block; }
+.pass h3 { margin-top:0; }
+.popular { border-color:var(--coral); }
+.badge { position:absolute; top:-12px; right:8px; background:var(--coral); color:white; padding:4px 8px; border-radius:8px; }
+.register { position:fixed; right:20px; bottom:20px; background:var(--navy); color:white; padding:12px 18px; border-radius:8px; text-decoration:none; }
+.slots { display:flex; align-items:center; gap:10px; }
+.slot { flex:1; background:var(--mint); padding:16px; min-height:80px; }
+.slot.first { flex:2; background:var(--gold); }
+.gallery { display:grid; grid-template-columns:repeat(4,1fr); grid-template-rows:repeat(2,100px); gap:10px; }
+.gallery div { display:grid; place-items:center; font-size:24px; font-weight:bold; background:var(--gold); }
+.gallery div:nth-child(2n) { background:var(--coral); }
+.gallery div:nth-child(3n) { background:var(--mint); }
+footer { text-align:center; background:var(--navy); color:white; padding:12px; }
+footer p { margin:0; }
+@media (max-width:768px) {
+.site-header { flex-direction:column; align-items:flex-start; }
+.passes { flex-direction:column; }
+.pass { width:100%; margin:0; }
+.gallery { grid-template-columns:repeat(2,1fr); grid-template-rows:repeat(4,100px); }
+.slots { flex-wrap:wrap; }
+}
+@media (max-width:480px) {
+.site-header h1 { font-size:28px; }
+main { padding:12px; }
+.gallery { grid-template-columns:1fr; grid-template-rows:repeat(8,100px); }
+}

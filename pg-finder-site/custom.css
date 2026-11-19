@@ -1,0 +1,9 @@
+:root { --brand:#12365b; --brand-accent:#e0a526; }
+.top-band { background:var(--brand); }
+.navbar .navbar-brand { font-family: Georgia, 'Times New Roman', serif; letter-spacing:.4px; }
+.navbar .nav-link.active { border-bottom:3px solid var(--brand-accent); color:#fff; }
+.btn-primary { background-color:var(--brand); border-color:var(--brand); }
+.listing { border:2px solid var(--brand); }
+.site-footer { background:var(--brand); color:#fff; }
+.site-footer h3 { color:#fff; }
+.hero-slide { min-height:260px; padding:70px 15%; background:#e7f0f8; color:var(--brand); }

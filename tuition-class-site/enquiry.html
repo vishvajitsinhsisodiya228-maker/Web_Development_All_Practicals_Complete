@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Enquiry | Bright Path</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>Bright Path Tuition Classes</h1></header>
+<nav aria-label="Main navigation"><a href="index.html">Home</a><a href="enquiry.html">Enquiry</a><a href="faculty.html">Faculty</a></nav>
+<main><article><h2>Student Enquiry Form</h2>
+<form method="get">
+<p><label for="student-name">Student name</label><br><input id="student-name" name="studentName" type="text" minlength="3" required></p>
+<p><label for="parent-email">Parent email</label><br><input id="parent-email" name="parentEmail" type="email" required></p>
+<p><label for="parent-phone">Parent phone</label><br><input id="parent-phone" name="parentPhone" type="tel" pattern="[0-9]{10}" title="Enter exactly 10 digits" required></p>
+<p><label for="age">Student age</label><br><input id="age" name="age" type="number" min="5" max="18" required></p>
+<p><label for="subject">Subject</label><br><select id="subject" name="subject" required><option value="">Choose a subject</option><option>Mathematics</option><option>Science</option><option>English</option><option>Social Studies</option><option>Computer Studies</option></select></p>
+<fieldset><legend>Learning mode</legend><label><input type="radio" name="mode" value="Online" required> Online</label><label><input type="radio" name="mode" value="Offline"> Offline</label></fieldset>
+<p><label for="message">Message</label><br><textarea id="message" name="message" rows="4" cols="40"></textarea></p>
+<button type="submit">Submit Enquiry</button> <button type="reset">Reset</button>
+</form></article></main>
+<footer>2026 Bright Path Tuition Classes</footer>
+</body></html>
